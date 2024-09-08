@@ -1,11 +1,11 @@
 
-# Currency Converter Website
+# Password Generator
 
-This is a simple Currency Converter website that uses APIs to convert one currency to another in real-time. Follow the steps below to clone the repository, install the dependencies, and start the project.
+This is a simple Password Generator web application that allows users to generate random, secure passwords based on selected criteria (length, uppercase, lowercase, numbers, and symbols).
 
 ## Prerequisites
 
-Before you begin, ensure that you have the following installed on your local machine:
+Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (version 14.18.0 or higher)
 - [npm](https://www.npmjs.com/) (version 6 or higher)
@@ -17,23 +17,21 @@ node -v
 npm -v
 ```
 
-You will also need an API key for currency conversion. This project uses [ExchangeRate-API](https://www.exchangerate-api.com/) (or any other currency conversion API). Obtain an API key from the service provider before proceeding.
-
 ## Installation
 
 ### Step 1: Clone the repository
 
-Clone this repository to your local machine using the following command:
+Clone this repository to your local machine:
 
 ```bash
 git clone <repository-url>
 ```
 
-Replace `<repository-url>` with the URL of your repository.
+Replace `<repository-url>` with the actual URL of your repository.
 
 ### Step 2: Navigate into the project directory
 
-Move into the project directory:
+Move into the project folder:
 
 ```bash
 cd <project-folder>
@@ -41,53 +39,41 @@ cd <project-folder>
 
 ### Step 3: Install dependencies
 
-Install the required dependencies by running the following command:
+Install the necessary dependencies by running the following command:
 
 ```bash
 npm install
 ```
 
-### Step 4: Configure the API Key
+### Step 4: Start the development server
 
-Create a `.env` file in the root of the project and add your API key for the currency conversion API. This file is used to securely store environment variables.
-
-Example of the `.env` file:
-
-```bash
-VITE_API_KEY=<your-exchange-rate-api-key>
-```
-
-Make sure to replace `<your-exchange-rate-api-key>` with the actual key you obtained from the API provider.
-
-### Step 5: Start the development server
-
-Once you’ve added the API key and installed the dependencies, start the development server:
+Run the development server to start the app:
 
 ```bash
 npm run dev
 ```
 
-Your Currency Converter app will now be running on:
+The app will be available at:
 
 ```bash
 http://localhost:5173
 ```
 
-### Step 6: Build for production (optional)
+### Step 5: Build for production (optional)
 
-To create a production-ready build of the app, run:
+To build the project for production, run:
 
 ```bash
 npm run build
 ```
 
-The build files will be generated in the `dist/` folder.
+The production build will be in the `dist/` directory.
 
 ## Features
 
-- Real-time currency conversion using API.
-- Convert between various currencies supported by the API.
-- Simple and clean UI.
+- Generate passwords with customizable length.
+- Include/exclude uppercase letters, lowercase letters, numbers, and symbols.
+- Simple and easy-to-use UI.
 
 ## Project Structure
 
@@ -95,11 +81,9 @@ The build files will be generated in the `dist/` folder.
 ├── public
 │   └── index.html           # Main HTML file
 ├── src
-│   ├── components           # React components
-│   ├── App.jsx              # Main application component
-│   ├── services             # API calls
+│   ├── components           # React components for UI
+│   ├── App.jsx              # Main app component
 │   └── main.jsx             # Entry point
-├── .env                     # Environment variables (API Key)
 ├── package.json             # Project configuration and dependencies
 └── vite.config.js           # Vite configuration
 ```
@@ -111,6 +95,8 @@ The build files will be generated in the `dist/` folder.
 - `npm run preview`: Preview the production build locally.
 
 ## Learn More
+
+To learn more about the tools used:
 
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [React Documentation](https://reactjs.org/)
